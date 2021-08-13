@@ -1,17 +1,10 @@
 .cover {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  p {
-    font-size: 30px;
-    color: white;
-    opacity: 0.7;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  }
 }
 
 .cover-index {
@@ -26,18 +19,9 @@
   }
 }
 
-.cover-show {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(asset_path('cinema.jpg'));
-  height: 300px;
-  justify-content: center;
-  h1 {
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    font-size: 50px;
-    font-weight: bold;
-  }
-  p {
-    text-align: center;
-    align-items: center;
-  }
+.subtitle {
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
