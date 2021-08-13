@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   end
   resources :bookmarks, only: :destroy
   resources :reviews, only: :destroy
-  resources :movies, only: [:index, :new, :create]
+  resources :movies, only: [:index, :create]
 end
