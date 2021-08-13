@@ -13,7 +13,9 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
+    <div class="navbar navbar-expand-sm">
+      <%= link_to "", root_path, class: "fas fa-film logo nav-link" %>
+    </div>
     <%= yield %>
   </body>
 </html>
