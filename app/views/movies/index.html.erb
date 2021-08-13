@@ -1,0 +1,30 @@
+<div class="container mb-5">
+  <div class="d-flex align-items-center justify-content-between mb-3">
+    <h3>All movies</h3>
+    <%= link_to 'add a movie', new_movie_path(@movie), class: 'btn btn-flat my-4' %>
+  </div>
+  <div class="row">
+    <% @movies.each do |movie| %>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card">
+          <%= image_tag movie.poster_url %>
+          <div class="container mb-2">
+            <div class="card-rating my-2">
+              <h6 class="m-0">
+                <%= movie.title %>
+              </h6>
+              <div class="stars">
+                <%= movie.rating %>
+                <i class="fas fa-star star-yellow ml-1"></i>
+              </div>
+            </div>
+            <p style="height: 100px;">
+              <%= movie.overview %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
