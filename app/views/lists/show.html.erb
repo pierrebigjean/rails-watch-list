@@ -11,7 +11,7 @@
       </div>
       <div class="row">
         <% if @list.movies.empty? %>
-          <small><em class="text-muted px-3">You have no movies in your list</em></small>
+          <small><em class="px-3" style="color: white;">You have no movies in your list</em></small>
         <% end %>
         <% @list.movies.each do |movie| %>
           <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
@@ -45,7 +45,7 @@
         <div class="col-12 col-sm-6 my-3">
           <h3>Reviews</h3>
           <% if @list.reviews.empty? %>
-            <small><em class="text-muted">Be the first one to review this list</em></small>
+            <small><em>Be the first one to review this list</em></small>
           <% end %>
           <% @list.reviews.each do |review| %>
             <div>
