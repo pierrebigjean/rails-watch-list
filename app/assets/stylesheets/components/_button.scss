@@ -10,3 +10,11 @@
     color: white;
   }
 }
+
+.nav-link {
+  color: #be95ec;
+  &:hover {
+    color: #8B6BB0;
+    text-shadow: 0 0 15px #8B6BB0;
+  }
+}

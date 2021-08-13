@@ -12,9 +12,9 @@
   <div class="row">
     <% @lists.each do |list| %>
       <div class="co-12 col-sm-6 col-md-4">
-        <%= link_to list_path(list), class:'text-decoration-none' do %>
-          <div class="card card-index mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('cinema.jpg') %>)">
-            <%= list.name %>
+        <%= link_to list_path(list) do %>
+          <div class="card card-index card-link mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('cinema.jpg') %>)">
+            <%= list.name %>  
             <%= link_to "+", list_path(list), method: :delete, data: { confirm: 'Remove this list ?' }, class: "card-remove-link" %>
           </div>
         <% end %>
